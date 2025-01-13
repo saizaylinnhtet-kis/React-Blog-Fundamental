@@ -1,5 +1,6 @@
 import Navigation from "./components/Navigation"
 import PeopleToFollow from "./components/PeopleToFollow"
+import TopicsList from "./components/TopicsList"
 import TrendList from "./components/TrendList"
 
 
@@ -13,6 +14,7 @@ const App = () => {
         <div className="w-[30%]">
           <PeopleToFollow />
           <TrendList />
+          <TopicsList />
         </div>
         {/* <div className="w-[70%]">
 

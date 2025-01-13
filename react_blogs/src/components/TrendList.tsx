@@ -20,7 +20,17 @@ const trends: trends[] = [
 
 const TrendList = () => {
   return (
-    <div>TrendList</div>
+    <div className="p-4 rounded-lg shadow mt-8">
+        <h3 className="font-semibold text-lg mb-4">Top Trends</h3>
+        <ul className="space-y-2">
+            {trends.map((trend, index)=>(
+                <li key={index} className="flex flex-col">
+                    <span className="font-medium">{trend.title}</span>
+                    <span className="text-sm text-gray-500">By {trend.author}</span>
+                </li>
+            ))}
+        </ul>
+    </div>
   )
 }
 
